@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miftahur Rahman</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./nativecss.css">
 </head>
 <body>
+<div id="backgro" class="container" >
     <!-- nav -->
     <nav>
         <div class="shadow-md w-full h-10 flex items-center justify-around">
             <span>Portofolio</span>
-            <ul class="flex ml-2 ">
+            <ul class="flex ml-2 capitalize">
                 <a href="#"><li class="flex ml-2 hover:text-yellow-700 active:text-blue-700">contact</li></a>
                 <a href="#"><li class="flex ml-2 hover:text-yellow-700 active:text-blue-700">project</li></a>
                 <a href="#"><li class="flex ml-2 hover:text-yellow-700 active:text-blue-700">home</li></a>
@@ -22,24 +24,28 @@
 
 
     <!-- main -->
-    <main class="flex gap-7">
+    <main class="flex flex-col justify-self-center max-w-[300px] sm:flex-row sm:max-w-md ">
         <!-- left -->
         <div class="h-full w-full my-5">
-            <h1 class="text-4xl">Introduce My Self</h1>
+            <span class="text-4xl"> Introduce <span class="before:absolute before:-inset-1 before:-skew-y-3 before:bg-black relative inline-block"><span class="relative text-white">My Self</span></span></span>
             <br>
-            <p class="text-">I am Miftahur Rahman, I am a student from SMKN 1 Kertajati and I am a beginner programmer.</p>
+            <div class="-skew-y-3 bg-black mt-3">
+                    <div>
+
+                        <p class="text-white px-2">I am Miftahur Rahman, I am a student from SMKN 1 Kertajati and I am a beginner programmer.</p>
+                    </div>
+            </div>
         </div>
         <!-- /left -->
 
         <!-- right -->
-        <div class="h-full w-full my-5 flex flex-wrap gap-x-5">
-            <div class="bg-white border-[10px] w-[100px] h-[100px] mt-5"></div>
-            <div class="bg-white border-[10px] w-[100px] h-[100px]"></div>
-            <div class="bg-white border-[10px] w-[100px] h-[100px] mt-5"></div>
-            <div class="bg-white border-[10px] w-[100px] h-[100px]"></div>
+        <div class="flex justify-center flex-col">
+            <img src="./img/eula.png" alt="" class="flex justify-center items-center">
+            <span class="justify-center flex mt-0 bg-black text-white">Eula Lawrance</span>
         </div>
         <!-- /right -->
     </main>
     <!-- /main -->
+</div>
 </body>
 </html>

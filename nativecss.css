@@ -1,0 +1,16 @@
+#backgro{
+    position:relative;
+    background: url(img/24000.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: animate 40s alternate linear infinite;
+}
+@keyframes animate{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 0;
+    }
+}
