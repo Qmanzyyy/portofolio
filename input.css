@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @layer base {
+    nav{
+        @apply w-full h-16 bg-white shadow-md justify-around;
+    }
+}*/

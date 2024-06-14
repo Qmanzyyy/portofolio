@@ -6,46 +6,90 @@
     <title>Miftahur Rahman</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./nativecss.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
 </head>
 <body>
-<div id="backgro" class="container" >
     <!-- nav -->
-    <nav>
-        <div class="shadow-md w-full h-10 flex items-center justify-around">
-            <span>Portofolio</span>
-            <ul class="flex ml-2 capitalize">
-                <a href="#"><li class="flex ml-2 hover:text-yellow-700 active:text-blue-700">contact</li></a>
-                <a href="#"><li class="flex ml-2 hover:text-yellow-700 active:text-blue-700">project</li></a>
-                <a href="#"><li class="flex ml-2 hover:text-yellow-700 active:text-blue-700">home</li></a>
+    <nav class="w-full h-16 bg-white shadow-md flex flex-row ">
+        <div class="container flex flex-row items-center justify-between">
+            <h1 class="px-4 py-2">Portofolio</h1>
+            <ul class="flex flex-row">
+                <li class="px-4 py-2 hover:border-b hover:border-b-red-600 hover:text-yellow-700 active:text-blue-900 transition-all">
+                    <a href="">Home</a>
+            </li>
+                <li class="px-4 py-2 hover:border-b hover:border-b-red-600 hover:text-yellow-700 active:text-blue-900 transition-all">
+                    <a href="">Project</a>
+                </li>
+                <li class="px-4 py-2 hover:border-b hover:border-b-red-600 hover:text-yellow-700 active:text-blue-900 transition-all">
+                    <a href="">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
     <!-- /nav -->
+<div id="backgro" class="container" >
 
 
     <!-- main -->
-    <main class="flex flex-col justify-self-center max-w-[300px] sm:flex-row sm:max-w-md ">
+    <main class="flex justify-between flex-col py-6">
         <!-- left -->
-        <div class="h-full w-full my-5">
-            <span class="text-4xl"> Introduce <span class="before:absolute before:-inset-1 before:-skew-y-3 before:bg-black relative inline-block"><span class="relative text-white">My Self</span></span></span>
-            <br>
-            <div class="-skew-y-3 bg-black mt-3">
-                    <div>
+        <div class="h-full w-full -z-10">
+            <div class="flex flex-row -skew-y-3 mb-3 -z-10">
 
-                        <p class="text-white px-2">I am Miftahur Rahman, I am a student from SMKN 1 Kertajati and I am a beginner programmer.</p>
-                    </div>
+                <span class="text-2xl introduce flex  items-center ">_________</span><span class="plip text-4xl items-center font-bold" id="swipe"></span>
+            </div>
+            <br>
+            <div class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block before:rounded-md">
+                   
+
+                        <p class="relative -skew-y-3 text-white px-2">I am Miftahur Rahman, I am a student from SMKN 1 Kertajati and I am a beginner programmer.</p>
+                    
             </div>
         </div>
         <!-- /left -->
 
         <!-- right -->
-        <div class="flex justify-center flex-col">
-            <img src="./img/eula.png" alt="" class="flex justify-center items-center">
-            <span class="justify-center flex mt-0 bg-black text-white">Eula Lawrance</span>
+        <div class="w-full flex justify-center items-center py-9">
+            <div class="max-w-xl flex flex-col">
+                <img src="./img/eula.png" alt="" class="w-lvw">
+                <span class="justify-center flex mt-0 bg-black text-white rounded-full">Eula Lawrance</span>
+
+            </div>
         </div>
         <!-- /right -->
     </main>
     <!-- /main -->
+
+    <!-- footer -->
+     <footer>
+
+     </footer>
+     <!-- /footer -->
+      <!-- animation script -->
+      <script>
+        gsap.registerPlugin(TextPlugin)
+        gsap.to('.introduce',{
+            text: 'Introduce',
+            duration: 2,
+            ease:'steps(25)'
+        })
+      </script>
+      <script>
+        gsap.registerPlugin(TextPlugin)
+        gsap.to('.plip',{
+            delay:1.2,
+            text:'My Self',
+            duration:2,
+            ease:'steps(7)'
+        })
+      </script>
+      <!-- /animation script -->
+
 </div>
 </body>
 </html>
