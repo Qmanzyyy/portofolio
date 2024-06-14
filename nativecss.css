@@ -18,8 +18,10 @@
 @keyframes swipe {
     0% {background-color: transparent; width: 0px;}
     50% {background-color:#ec4899; width: 50px;}
-    100% {background-color:#ec4899; width: 145px;}
+    100% {background-color:#ec4899; width: 100px; color: white;}
 }
 #swipe{
-    animation: swipe 2s linear 0.8s 1 normal forwards;
+    height: 48px;
+    padding: 4px;
+    animation: swipe 2s linear 0.9s 1 normal forwards;
 }

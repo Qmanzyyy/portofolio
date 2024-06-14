@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./index.html'],
   theme: {
+    fontFamily: {
+      display:'Bebas Neue'
+    },
     container: {
       center: true,
       padding: '16px',
